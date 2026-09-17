@@ -3,6 +3,7 @@ import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 
 const uiRoot = fileURLToPath(new URL('./code/ui/', import.meta.url))
+const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1]
 const fragmentPaths = [
   'src/templates/fragments/dashboard/overview.html',
   'src/templates/fragments/dashboard/overview-today.html',
@@ -26,6 +27,7 @@ const fragmentPaths = [
 ]
 
 export default defineConfig({
+  base: process.env.GITHUB_ACTIONS && repositoryName ? `/${repositoryName}/` : '/',
   root: 'code/ui',
   envDir: '../../project/setup',
   server: {

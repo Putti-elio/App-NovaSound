@@ -8,7 +8,7 @@
       content="NovaSound turns listening history into transparent, verifiable insights."
     />
     <meta name="theme-color" content="#f4f1e8" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <title>NovaSound | Your listening, put in perspective</title>
   </head>
   <body>
@@ -16,7 +16,7 @@
 
     <div class="app-shell">
       <aside class="sidebar" aria-label="Main navigation">
-        <a class="brand" href="/" aria-label="NovaSound, home">
+        <a class="brand" href="./" aria-label="NovaSound, home">
           <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
             <path d="M8 29V12M16 29V7M24 29V16M32 29V10" />
             <path d="M6 29h28" />
@@ -33,19 +33,19 @@
           hx-indicator="#global-loader"
           hx-push-url="false"
         >
-          <a href="/src/templates/fragments/dashboard/overview.html" hx-get="/src/templates/fragments/dashboard/overview.html" hx-push-url="false">
+          <a href="src/templates/fragments/dashboard/overview.html" hx-get="src/templates/fragments/dashboard/overview.html" hx-push-url="false">
             <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z" /></svg>Overview
           </a>
-          <a href="/src/templates/fragments/analytics/analytics.html" hx-get="/src/templates/fragments/analytics/analytics.html" hx-push-url="false">
+          <a href="src/templates/fragments/analytics/analytics.html" hx-get="src/templates/fragments/analytics/analytics.html" hx-push-url="false">
             <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18 9 12l4 3 7-9M4 5v14h16" /></svg>Analytics
           </a>
-          <a href="/src/templates/fragments/tops/tops.html" hx-get="/src/templates/fragments/tops/tops.html" hx-push-url="false">
+          <a href="src/templates/fragments/tops/tops.html" hx-get="src/templates/fragments/tops/tops.html" hx-push-url="false">
             <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>Top lists
           </a>
-          <a href="/src/templates/fragments/history/history.html" hx-get="/src/templates/fragments/history/history.html" hx-push-url="false">
+          <a href="src/templates/fragments/history/history.html" hx-get="src/templates/fragments/history/history.html" hx-push-url="false">
             <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2" /></svg>History
           </a>
-          <a href="/src/templates/fragments/quality/quality.html" hx-get="/src/templates/fragments/quality/quality.html" hx-push-url="false">
+          <a href="src/templates/fragments/quality/quality.html" hx-get="src/templates/fragments/quality/quality.html" hx-push-url="false">
             <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4v5c0 5-3.4 8-8 9-4.6-1-8-4-8-9V7zM9 12l2 2 4-4" /></svg>Data quality
           </a>
         </nav>
@@ -60,8 +60,8 @@
           </div>
           <p>6 years and 8 months analyzed</p>
           <a
-            href="/src/templates/fragments/quality/quality.html"
-            hx-get="/src/templates/fragments/quality/quality.html"
+            href="src/templates/fragments/quality/quality.html"
+            hx-get="src/templates/fragments/quality/quality.html"
             hx-target="#main-content"
             hx-indicator="#global-loader"
           >View report</a>
@@ -86,18 +86,18 @@
               hx-push-url="false"
               hx-on::after-request="this.closest('details').open = false"
             >
-              <a href="/src/templates/fragments/dashboard/overview.html" hx-get="/src/templates/fragments/dashboard/overview.html" hx-push-url="false">Overview</a>
-              <a href="/src/templates/fragments/analytics/analytics.html" hx-get="/src/templates/fragments/analytics/analytics.html" hx-push-url="false">Analytics</a>
-              <a href="/src/templates/fragments/tops/tops.html" hx-get="/src/templates/fragments/tops/tops.html" hx-push-url="false">Top lists</a>
-              <a href="/src/templates/fragments/history/history.html" hx-get="/src/templates/fragments/history/history.html" hx-push-url="false">History</a>
-              <a href="/src/templates/fragments/quality/quality.html" hx-get="/src/templates/fragments/quality/quality.html" hx-push-url="false">Quality</a>
+              <a href="src/templates/fragments/dashboard/overview.html" hx-get="src/templates/fragments/dashboard/overview.html" hx-push-url="false">Overview</a>
+              <a href="src/templates/fragments/analytics/analytics.html" hx-get="src/templates/fragments/analytics/analytics.html" hx-push-url="false">Analytics</a>
+              <a href="src/templates/fragments/tops/tops.html" hx-get="src/templates/fragments/tops/tops.html" hx-push-url="false">Top lists</a>
+              <a href="src/templates/fragments/history/history.html" hx-get="src/templates/fragments/history/history.html" hx-push-url="false">History</a>
+              <a href="src/templates/fragments/quality/quality.html" hx-get="src/templates/fragments/quality/quality.html" hx-push-url="false">Quality</a>
             </nav>
           </details>
 
           <form
             class="search"
             role="search"
-            hx-get="/src/templates/fragments/search/results.html"
+            hx-get="src/templates/fragments/search/results.html"
             hx-target="#main-content"
             hx-swap="innerHTML show:top"
             hx-indicator="#global-loader"
@@ -123,7 +123,7 @@
         <main
           id="main-content"
           tabindex="-1"
-          hx-get="/src/templates/fragments/dashboard/overview.html"
+          hx-get="src/templates/fragments/dashboard/overview.html"
           hx-trigger="load"
           hx-swap="innerHTML"
           hx-indicator="#global-loader"
@@ -141,6 +141,6 @@
          HTMX requires JavaScript to load this demo's fragments. The data remains entirely local.
       </p>
     </noscript>
-    <script type="module" src="/src/static/js/app.js"></script>
+    <script type="module" src="./src/static/js/app.js"></script>
   </body>
 </html>

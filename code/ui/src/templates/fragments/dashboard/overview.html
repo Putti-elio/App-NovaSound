@@ -16,7 +16,7 @@
       <button
         id="period-today"
         type="button"
-        hx-get="/src/templates/fragments/dashboard/overview-today.html"
+        hx-get="src/templates/fragments/dashboard/overview-today.html"
         hx-target="#dashboard-period-content"
         hx-swap="innerHTML"
         hx-indicator="#period-loader"
@@ -25,7 +25,7 @@
         id="period-four-weeks"
         type="button"
         class="is-selected"
-        hx-get="/src/templates/fragments/dashboard/overview.html"
+          hx-get="src/templates/fragments/dashboard/overview.html"
         hx-target="#main-content"
         hx-swap="innerHTML show:top"
         hx-indicator="#period-loader"
@@ -34,7 +34,7 @@
       <button
         id="period-lifetime"
         type="button"
-        hx-get="/src/templates/fragments/dashboard/overview-lifetime.html"
+          hx-get="src/templates/fragments/dashboard/overview-lifetime.html"
         hx-target="#dashboard-period-content"
         hx-swap="innerHTML"
         hx-indicator="#period-loader"
@@ -100,7 +100,7 @@
           <div class="bar-group is-peak"><span class="bar-secondary" style="height: 80%"></span><span class="bar-primary" style="height: 90%"></span><small>31</small></div>
           <div class="bar-group"><span class="bar-secondary" style="height: 55%"></span><span class="bar-primary" style="height: 64%"></span><small>1 sept.</small></div>
         </div>
-        <footer class="panel-footer"><span>Peak: 4 h 41 min on Aug 31</span><a href="/src/templates/fragments/analytics/analytics.html" hx-get="/src/templates/fragments/analytics/analytics.html" hx-target="#main-content" hx-indicator="#global-loader">Explore the full series →</a></footer>
+        <footer class="panel-footer"><span>Peak: 4 h 41 min on Aug 31</span><a href="src/templates/fragments/analytics/analytics.html" hx-get="src/templates/fragments/analytics/analytics.html" hx-target="#main-content" hx-indicator="#global-loader">Explore the full series →</a></footer>
       </article>
 
       <article class="panel duration-panel">
@@ -115,12 +115,12 @@
       <article class="panel top-artists-panel">
         <header class="panel-heading">
           <div><p class="eyebrow">Concentration</p><h2>Artistes qui ont occupé votre mois</h2></div>
-          <a href="/src/templates/fragments/tops/tops.html" hx-get="/src/templates/fragments/tops/tops.html" hx-target="#main-content" hx-indicator="#global-loader">Tout voir</a>
+          <a href="src/templates/fragments/tops/tops.html" hx-get="src/templates/fragments/tops/tops.html" hx-target="#main-content" hx-indicator="#global-loader">Tout voir</a>
         </header>
         <ol class="rank-list rank-list-compact">
           <li>
             <span class="rank">01</span><span class="artwork artwork-coral">MW</span>
-            <a href="/src/templates/fragments/entities/artist.html" hx-get="/src/templates/fragments/entities/artist.html" hx-target="#main-content" hx-indicator="#global-loader"><strong>Morgan Wallen</strong><small>1 629 min · 488 streams</small></a>
+            <a href="src/templates/fragments/entities/artist.html" hx-get="src/templates/fragments/entities/artist.html" hx-target="#main-content" hx-indicator="#global-loader"><strong>Morgan Wallen</strong><small>1 629 min · 488 streams</small></a>
             <span class="share">29,3 %</span>
           </li>
           <li><span class="rank">02</span><span class="artwork artwork-blue">KL</span><span><strong>Kendrick Lamar</strong><small>582 min · 183 streams</small></span><span class="share">10,5 %</span></li>
@@ -143,7 +143,7 @@
       <article class="panel recent-panel">
         <header class="panel-heading">
           <div><p class="eyebrow">Dernières écoutes</p><h2>Encore frais dans vos oreilles</h2></div>
-          <a href="/src/templates/fragments/history/history.html" hx-get="/src/templates/fragments/history/history.html" hx-target="#main-content" hx-indicator="#global-loader">Historique</a>
+            <a href="src/templates/fragments/history/history.html" hx-get="src/templates/fragments/history/history.html" hx-target="#main-content" hx-indicator="#global-loader">Historique</a>
         </header>
         <ul class="recent-list">
           <li><span class="artwork artwork-coral">IC</span><span><strong>I'm a Little Crazy</strong><small>Morgan Wallen · I'm the Problem</small></span><span><strong>3:16</strong><small>99 % · il y a 10 h</small></span></li>

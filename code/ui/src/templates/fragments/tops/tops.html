@@ -8,14 +8,14 @@
     <p><strong>Aug 05 – Sep 01, 2026</strong><span>Descending by time · Europe/Paris</span></p>
   </div>
   <div class="top-tabs" aria-label="Ranking type">
-    <button type="button" hx-get="/src/templates/fragments/tops/tracks.html" hx-target="#top-list" hx-indicator="#tops-loader">Pistes <span>100</span></button>
-    <button type="button" hx-get="/src/templates/fragments/tops/artists.html" hx-target="#top-list" hx-indicator="#tops-loader">Artistes <span>100</span></button>
-    <button type="button" hx-get="/src/templates/fragments/tops/albums.html" hx-target="#top-list" hx-indicator="#tops-loader">Albums <span>100</span></button>
-    <button type="button" hx-get="/src/templates/fragments/tops/playlists.html" hx-target="#top-list" hx-indicator="#tops-loader">Playlists <span>100</span></button>
-    <button type="button" hx-get="/src/templates/fragments/tops/genres.html" hx-target="#top-list" hx-indicator="#tops-loader">Genres <span>126</span></button>
+    <button type="button" hx-get="src/templates/fragments/tops/tracks.html" hx-target="#top-list" hx-indicator="#tops-loader">Pistes <span>100</span></button>
+    <button type="button" hx-get="src/templates/fragments/tops/artists.html" hx-target="#top-list" hx-indicator="#tops-loader">Artistes <span>100</span></button>
+    <button type="button" hx-get="src/templates/fragments/tops/albums.html" hx-target="#top-list" hx-indicator="#tops-loader">Albums <span>100</span></button>
+    <button type="button" hx-get="src/templates/fragments/tops/playlists.html" hx-target="#top-list" hx-indicator="#tops-loader">Playlists <span>100</span></button>
+    <button type="button" hx-get="src/templates/fragments/tops/genres.html" hx-target="#top-list" hx-indicator="#tops-loader">Genres <span>126</span></button>
   </div>
   <div id="tops-loader" class="inline-loader htmx-indicator">Loading mock ranking...</div>
-  <div id="top-list" hx-get="/src/templates/fragments/tops/tracks.html" hx-trigger="load" hx-swap="innerHTML" hx-indicator="#tops-loader">
+  <div id="top-list" hx-get="src/templates/fragments/tops/tracks.html" hx-trigger="load" hx-swap="innerHTML" hx-indicator="#tops-loader">
     <div class="loading-state"><p>Preparing ranking...</p></div>
   </div>
 </section>
