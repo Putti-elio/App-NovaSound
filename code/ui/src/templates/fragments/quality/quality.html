@@ -1,0 +1,24 @@
+<section class="page" aria-labelledby="quality-title">
+  <header class="page-heading">
+    <div><p class="eyebrow">Quality and traceability</p><h1 id="quality-title">Know what your numbers cover.</h1><p class="page-lede">A readable import report before talking about “all your listening”.</p></div>
+    <div class="heading-actions"><span class="quality-score"><strong>94</strong>/100 <small>estimated coverage</small></span></div>
+  </header>
+
+  <div class="quality-overview">
+    <article class="panel quality-main-card">
+      <header><span class="status-icon status-good" aria-label="Simulated import complete"></span><div><p class="eyebrow">Latest simulated import</p><h2>Spotify Extended Streaming History</h2><p>Completed Sep 1, 2026 at 08:42 · 14 JSON files</p></div></header>
+      <div class="quality-counts"><span><strong>132,840</strong><small>events read</small></span><span><strong>128,406</strong><small>included</small></span><span><strong>3,922</strong><small>excluded</small></span><span><strong>512</strong><small>duplicates</small></span></div>
+      <div class="progress-track progress-large"><span style="width: 94%"></span></div>
+      <p class="annotation">Detected coverage: Dec 18, 2019 → Sep 1, 2026. Three periods appear incomplete.</p>
+    </article>
+    <aside class="panel quality-actions"><p class="eyebrow">Local actions</p><h2>Recheck the mocks</h2><p>This action sends no files and only replaces the card with a simulated state.</p><button class="button button-primary" type="button" hx-get="/src/templates/fragments/quality/recheck.html" hx-target="#quality-check-result" hx-indicator="#quality-action-loader">Run analysis again</button><span id="quality-action-loader" class="inline-loader htmx-indicator">Simulated analysis...</span></aside>
+  </div>
+
+  <div id="quality-check-result"></div>
+  <div class="quality-grid">
+    <article class="panel"><header class="panel-heading"><div><p class="eyebrow">Couverture temporelle</p><h2>3 lacunes détectées</h2></div><span class="status-pill status-warning">À vérifier</span></header><ul class="issue-list"><li><span>Fév. 2020</span><strong>11 jours sans événement</strong><small>Peut correspondre à une absence réelle ou à un fichier manquant.</small></li><li><span>Juin 2022</span><strong>4 jours sans événement</strong><small>Rupture inhabituelle face au rythme voisin.</small></li><li><span>Août 2026</span><strong>2 jours partiels</strong><small>Synchronisation interrompue puis reprise.</small></li></ul></article>
+    <article class="panel"><header class="panel-heading"><div><p class="eyebrow">Résolution catalogue</p><h2>98,7 % des URI reconnues</h2></div><span class="status-pill status-good-pill">Solide</span></header><dl class="quality-dl"><div><dt>URI résolues</dt><dd>126 737</dd></div><div><dt>URI inconnues</dt><dd>1 669</dd></div><div><dt>Doublons ISRC potentiels</dt><dd>284</dd></div><div><dt>Éditions multiples</dt><dd>419</dd></div></dl><p class="data-note"><span>i</span>Les identités source sont conservées; aucune fusion irréversible n'est appliquée.</p></article>
+    <article class="panel"><header class="panel-heading"><div><p class="eyebrow">Règles d'exclusion</p><h2>Pourquoi 3 922 événements ne comptent pas</h2></div></header><div class="exclusion-bars"><div><p><strong>Moins de 30 secondes</strong><span>2 148</span></p><div><i style="width:55%"></i></div></div><div><p><strong>Marqués comme skip</strong><span>1 121</span></p><div><i style="width:29%"></i></div></div><div><p><strong>Fichiers locaux</strong><span>431</span></p><div><i style="width:11%"></i></div></div><div><p><strong>Podcasts</strong><span>222</span></p><div><i style="width:6%"></i></div></div></div></article>
+    <article class="panel"><header class="panel-heading"><div><p class="eyebrow">Provenance</p><h2>Ce qui alimente la couverture</h2></div></header><div class="source-split"><span style="--size:88%"><strong>88 %</strong><small>Import historique</small></span><span style="--size:12%"><strong>12 %</strong><small>Synchronisation récente</small></span></div><p class="annotation">La clé de déduplication mockée associe URI et timestamp dans une tolérance de 2 secondes.</p></article>
+  </div>
+</section>

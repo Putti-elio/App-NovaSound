@@ -1,0 +1,7 @@
+FROM oven/bun:1.4.2
+
+WORKDIR /app
+
+EXPOSE 5173
+
+CMD ["bun", "run", "dev", "--", "--host", "0.0.0.0"]
