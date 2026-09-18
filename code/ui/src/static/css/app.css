@@ -513,7 +513,18 @@ html[data-theme="oled"] select {
 .home-page .artist-card,
 .home-page .recommendation-card,
 .home-page .release-card {
-  background: var(--color-paper);
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.home-page .home-card:hover,
+.home-page .cover-card:hover,
+.home-page .artist-card:hover,
+.home-page .recommendation-card:hover,
+.home-page .release-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: 3px 3px 0 color-mix(in srgb, var(--color-accent) 18%, transparent);
 }
 
 .home-page .release-subheading {
