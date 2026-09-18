@@ -527,6 +527,17 @@ html[data-theme="oled"] select {
   box-shadow: 3px 3px 0 color-mix(in srgb, var(--color-accent) 18%, transparent);
 }
 
+@media (min-width: 681px) {
+  .home-page .home-card,
+  .home-page .cover-card,
+  .home-page .artist-card,
+  .home-page .recommendation-card,
+  .home-page .release-card {
+    background: var(--color-paper);
+    border-color: var(--color-line);
+  }
+}
+
 .home-page .release-subheading {
   margin: 1.4rem 0 .7rem;
   color: var(--color-muted);
