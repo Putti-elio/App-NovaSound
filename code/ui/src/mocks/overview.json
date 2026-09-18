@@ -1,0 +1,62 @@
+{
+  "mock": true,
+  "owner": "Maya Laurent",
+  "updatedAt": "September 2, 2026 at 09:15",
+  "provenance": {
+    "source": "NovaSound local personalized mock",
+    "note": "This home is assembled from Maya's local library and followed artists."
+  },
+  "recentListens": [
+    {
+      "title": "I'm a Little Crazy",
+      "artist": "Morgan Wallen",
+      "album": "I'm the Problem",
+      "duration": "3:16",
+      "playedAt": "10 minutes ago",
+      "artwork": "IC"
+    },
+    {
+      "title": "luther",
+      "artist": "Kendrick Lamar, SZA",
+      "album": "GNX",
+      "duration": "2:56",
+      "playedAt": "42 minutes ago",
+      "artwork": "LU"
+    },
+    {
+      "title": "I Got Better",
+      "artist": "Morgan Wallen",
+      "album": "I'm the Problem",
+      "duration": "2:58",
+      "playedAt": "1 hour ago",
+      "artwork": "IG"
+    }
+  ],
+  "albums": [
+    { "title": "I'm the Problem", "artist": "Morgan Wallen", "detail": "Back in rotation", "artwork": "IP" },
+    { "title": "GNX", "artist": "Kendrick Lamar", "detail": "A recent favorite", "artwork": "GX" },
+    { "title": "Hit Me Hard and Soft", "artist": "Billie Eilish", "detail": "Played this week", "artwork": "HM" },
+    { "title": "The Rise and Fall of a Midwest Princess", "artist": "Chappell Roan", "detail": "Saved in your library", "artwork": "RP" }
+  ],
+  "personalPlaylists": [
+    { "title": "Sunday reset", "description": "Soft starts and open windows", "trackCount": 32, "artwork": "SR" },
+    { "title": "Late-night drive", "description": "The long way home", "trackCount": 47, "artwork": "LD" },
+    { "title": "Maya's favorites", "description": "The songs that stay", "trackCount": 86, "artwork": "MF" }
+  ],
+  "recommendations": [
+    { "title": "Too Sweet", "artist": "Hozier", "reason": "Because you keep returning to singer-songwriters", "artwork": "TS" },
+    { "title": "Casual", "artist": "Chappell Roan", "reason": "A match for your recent pop rotation", "artwork": "CA" },
+    { "title": "Pink Skies", "artist": "Zach Bryan", "reason": "Recommended from your country favorites", "artwork": "PS" }
+  ],
+  "followedArtists": [
+    { "name": "Morgan Wallen", "genre": "Country", "detail": "New release today", "artwork": "MW" },
+    { "name": "Kendrick Lamar", "genre": "Hip-hop", "detail": "3 albums in your library", "artwork": "KL" },
+    { "name": "Billie Eilish", "genre": "Alternative pop", "detail": "Followed since 2024", "artwork": "BE" },
+    { "name": "Chappell Roan", "genre": "Pop", "detail": "New to your follows", "artwork": "CR" }
+  ],
+  "followedReleases": [
+    { "title": "I'm the Problem", "artist": "Morgan Wallen", "releaseType": "Album · September 2, 2026", "artwork": "IP" },
+    { "title": "The Great Impersonator", "artist": "Halsey", "releaseType": "Album · August 30, 2026", "artwork": "GI" },
+    { "title": "Hit Me Hard and Soft", "artist": "Billie Eilish", "releaseType": "Album · August 28, 2026", "artwork": "HM" }
+  ]
+}

@@ -4,6 +4,7 @@ import albumsData from '../../mocks/albums.json'
 import artistsData from '../../mocks/artists.json'
 import playlistsData from '../../mocks/playlists.json'
 import tracksData from '../../mocks/tracks.json'
+import overviewData from '../../mocks/overview.json'
 
 const pageSize = Number.POSITIVE_INFINITY
 const rankings = {
@@ -144,6 +145,17 @@ function renderRanking(rankingElement) {
   renderNextPage()
 }
 
+function hydrateOverview(target) {
+  const overview = target.matches?.('[data-overview]')
+    ? target
+    : target.querySelector?.('[data-overview]')
+  const updatedLabel = overview?.querySelector('[data-overview-updated]')
+
+  if (updatedLabel) {
+    updatedLabel.textContent = `${overviewData.provenance.source} · ${overviewData.updatedAt}`
+  }
+}
+
 document.body.addEventListener('htmx:afterSwap', (event) => {
   const target = event.detail.target
   const rankingElement = target.querySelector?.('[data-ranking]')
@@ -151,4 +163,6 @@ document.body.addEventListener('htmx:afterSwap', (event) => {
   if (rankingElement) {
     renderRanking(rankingElement)
   }
+
+  hydrateOverview(target)
 })

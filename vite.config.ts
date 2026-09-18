@@ -6,8 +6,6 @@ const uiRoot = fileURLToPath(new URL('./code/ui/', import.meta.url))
 const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1]
 const fragmentPaths = [
   'src/templates/fragments/dashboard/overview.html',
-  'src/templates/fragments/dashboard/overview-today.html',
-  'src/templates/fragments/dashboard/overview-lifetime.html',
   'src/templates/fragments/analytics/analytics.html',
   'src/templates/fragments/tops/tops.html',
   'src/templates/fragments/tops/tracks.html',
@@ -24,6 +22,7 @@ const fragmentPaths = [
   'src/templates/fragments/entities/artist.html',
   'src/templates/fragments/entities/track.html',
   'src/templates/fragments/entities/album.html',
+  'src/templates/fragments/entities/playlist.html',
 ]
 
 export default defineConfig({
