@@ -423,3 +423,151 @@ html[data-theme="oled"] .button-secondary {
   .release-card,
   .entity-album-link { transition: none; }
 }
+
+/* Shared theme controls and the quiet, scrollable overview treatment. */
+html {
+  color-scheme: light;
+  background: var(--color-paper);
+}
+
+html[data-theme="oled"] {
+  color-scheme: dark;
+}
+
+body {
+  color: var(--color-ink);
+  background-color: var(--color-paper);
+  background-image: linear-gradient(color-mix(in srgb, var(--color-accent) 5%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in srgb, var(--color-accent) 5%, transparent) 1px, transparent 1px);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  min-height: 2.15rem;
+  padding: .35rem .65rem;
+  border: 1px solid var(--color-line);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  cursor: pointer;
+  font-size: .64rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.theme-toggle svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+html[data-theme="oled"] .theme-toggle,
+html[data-theme="oled"] .topbar {
+  border-color: var(--color-line);
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+
+html[data-theme="oled"] .sidebar,
+html[data-theme="oled"] .coverage-card,
+html[data-theme="oled"] .profile-chip,
+html[data-theme="oled"] .loading-state,
+html[data-theme="oled"] .filter-bar,
+html[data-theme="oled"] .entity-hero,
+html[data-theme="oled"] .panel,
+html[data-theme="oled"] input,
+html[data-theme="oled"] select {
+  border-color: var(--color-line);
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+
+.home-page .home-section {
+  padding: 1.1rem 0;
+  border: 0;
+  border-top: 1px solid var(--color-line);
+  background: transparent;
+  box-shadow: none;
+}
+
+.home-page .home-section-featured {
+  border-top: 0;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.home-page .home-grid {
+  gap: 0 clamp(1rem, 3vw, 2.5rem);
+}
+
+.home-page .home-card,
+.home-page .cover-card,
+.home-page .artist-card,
+.home-page .recommendation-card,
+.home-page .release-card {
+  background: var(--color-paper);
+}
+
+.home-page .release-subheading {
+  margin: 1.4rem 0 .7rem;
+  color: var(--color-muted);
+  font-size: .63rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.release-rail {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(18rem, 23rem);
+  gap: .8rem;
+  min-width: 0;
+  padding: .25rem .15rem .7rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline proximity;
+  scrollbar-color: var(--color-line) transparent;
+}
+
+.release-rail:focus-visible {
+  outline: 3px solid var(--color-highlight);
+  outline-offset: 3px;
+}
+
+.release-rail .release-card {
+  scroll-snap-align: start;
+}
+
+.release-card {
+  min-height: 5.8rem;
+}
+
+@media (max-width: 680px) {
+  .theme-toggle {
+    padding-inline: .5rem;
+  }
+
+  .theme-toggle span {
+    display: none;
+  }
+
+  .release-rail {
+    grid-auto-columns: minmax(min(82vw, 21rem), 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .release-rail {
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+  }
+}

@@ -56,7 +56,14 @@
   ],
   "followedReleases": [
     { "title": "I'm the Problem", "artist": "Morgan Wallen", "releaseType": "Album · September 2, 2026", "artwork": "IP" },
-    { "title": "The Great Impersonator", "artist": "Halsey", "releaseType": "Album · August 30, 2026", "artwork": "GI" },
-    { "title": "Hit Me Hard and Soft", "artist": "Billie Eilish", "releaseType": "Album · August 28, 2026", "artwork": "HM" }
+    { "title": "GNX", "artist": "Kendrick Lamar", "releaseType": "Album · September 1, 2026", "artwork": "GX" },
+    { "title": "Hit Me Hard and Soft", "artist": "Billie Eilish", "releaseType": "Album · August 28, 2026", "artwork": "HM" },
+    { "title": "The Rise and Fall of a Midwest Princess", "artist": "Chappell Roan", "releaseType": "Album · August 25, 2026", "artwork": "RP" }
+  ],
+  "followedReleaseSongs": [
+    { "title": "I'm a Little Crazy", "artist": "Morgan Wallen", "releaseType": "Song · September 2, 2026", "artwork": "IC" },
+    { "title": "luther", "artist": "Kendrick Lamar, SZA", "releaseType": "Song · September 1, 2026", "artwork": "LU" },
+    { "title": "What Was I Made For?", "artist": "Billie Eilish", "releaseType": "Song · August 29, 2026", "artwork": "WW" },
+    { "title": "Casual", "artist": "Chappell Roan", "releaseType": "Song · August 27, 2026", "artwork": "CA" }
   ]
 }

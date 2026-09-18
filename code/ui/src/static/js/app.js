@@ -14,6 +14,28 @@ const rankings = {
   tracks: tracksData,
 }
 
+function initializeThemeToggle() {
+  const toggle = document.querySelector('[data-theme-toggle]')
+  const label = toggle?.querySelector('[data-theme-toggle-label]')
+
+  if (!(toggle instanceof HTMLButtonElement) || !(label instanceof HTMLElement)) {
+    return
+  }
+
+  const updateTheme = (theme) => {
+    const isOled = theme === 'oled'
+    document.documentElement.dataset.theme = isOled ? 'oled' : 'light'
+    toggle.setAttribute('aria-pressed', String(isOled))
+    toggle.setAttribute('aria-label', isOled ? 'Use light theme' : 'Use OLED dark theme')
+    label.textContent = isOled ? 'Light theme' : 'OLED dark'
+  }
+
+  updateTheme(document.documentElement.dataset.theme)
+  toggle.addEventListener('click', () => {
+    updateTheme(document.documentElement.dataset.theme === 'oled' ? 'light' : 'oled')
+  })
+}
+
 function createElement(tagName, className, text) {
   const element = document.createElement(tagName)
 
@@ -155,6 +177,8 @@ function hydrateOverview(target) {
     updatedLabel.textContent = `${overviewData.provenance.source} · ${overviewData.updatedAt}`
   }
 }
+
+initializeThemeToggle()
 
 document.body.addEventListener('htmx:afterSwap', (event) => {
   const target = event.detail.target
